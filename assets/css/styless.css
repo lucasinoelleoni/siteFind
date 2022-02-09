@@ -1,0 +1,285 @@
+.section {
+	position: relative;
+	height: 120vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 55%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* #booking {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('/assets/img/devs.jpg');
+	background-size: cover;
+	background-position: center;
+} */
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(47, 103, 177, 0.6);
+}
+
+.booking-form {
+	background-color: #fff;
+	padding: 50px 20px;
+	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+	background-color: #ebecee;
+	border-radius: 4px;
+	border: none;
+	height: 40px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #3e485c;
+	font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(62, 72, 92, 0.3);
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	display: inline-block;
+	color: #3e485c;
+	font-weight: 700;
+	margin-bottom: 6px;
+	margin-left: 7px;
+}
+
+.booking-form .submit-btn {
+	display: inline-block;
+	color: #fff;
+	background-color: #1e62d8;
+	font-weight: 700;
+	padding: 14px 30px;
+	border-radius: 4px;
+	border: none;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+	opacity: 0.9;
+}
+
+.booking-cta {
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.booking-cta h1 {
+	font-size: 52px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+
+.booking-cta p {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 576px) {
+	#booking {
+		height: 100rem;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+	color: #444444;
+	font-size: 14px;
+	background: #eeeef5;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  #footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #fff;
+  }
+  #footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-contact h3 {
+	font-size: 28px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 700;
+	color: #5a5af3;
+  }
+  #footer .footer-top .footer-contact p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+	color: #777777;
+  }
+  #footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #434175;
+	position: relative;
+	padding-bottom: 12px;
+  }
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: #5a5af3;
+	font-size: 18px;
+	line-height: 1;
+  }
+  #footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  #footer .footer-top .footer-links ul a {
+	color: #777777;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+  }
+  #footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+	color: #5a5af3;
+  }
+  #footer .footer-newsletter {
+	font-size: 15px;
+  }
+  #footer .footer-newsletter h4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #444444;
+	position: relative;
+	padding-bottom: 12px;
+  }
+  #footer .footer-newsletter form {
+	margin-top: 30px;
+	background: #fff;
+	padding: 6px 10px;
+	position: relative;
+	border-radius: 50px;
+	text-align: left;
+	border: 1px solid #b9b9fa;
+  }
+  #footer .footer-newsletter form input[type=email] {
+	border: 0;
+	padding: 4px 8px;
+	width: calc(100% - 100px);
+  }
+  #footer .footer-newsletter form input[type=submit] {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background: #5a5af3;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 50px;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  #footer .footer-newsletter form input[type=submit]:hover {
+	background: #7272f5;
+  }
+  #footer .credits {
+	padding-top: 5px;
+	font-size: 13px;
+	color: #444444;
+  }
+  #footer .credits a {
+	transition: 0.3s;
+  }
+  #footer .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #deddec;
+	color: #434175;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  #footer .social-links a:hover {
+	background: #5a5af3;
+	color: #fff;
+	text-decoration: none;
+  }
